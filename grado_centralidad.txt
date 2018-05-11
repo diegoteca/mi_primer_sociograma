@@ -1,1 +1,53 @@
-grado de centralidadn   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. n  0.000   1.000   3.000   3.939   6.000  12.000 grado de centralidad|   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. |  0.000   1.000   3.000   3.939   6.000  12.000 grado de centralidad,   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. ,  0.000   1.000   3.000   3.939   6.000  12.000 grado de centralidad/r   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. /r  0.000   1.000   3.000   3.939   6.000  12.000 
+**Datos Agregados***
+
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+
+  0.000   1.000   3.000   3.939   6.000  12.000 
+  
+  **Datos Individuales**
+  
+grado de centralidad
+
+     ARANCIBIA.ELIANA.SOLEDAD       ARRECHEA.WALTER.FACUNDO          AVALOS.JESICA.ANALIA 
+
+                            3                             1                             4 
+
+        BARRIOS.LAURA.DANIELA GANDUGLIA.AYELEN.CELESTE.BELE           BENITEZ.LUCIA.ANAHI 
+
+                            6                             5                             1 
+
+        CABELLO.HUGO.MAURICIO          COMOTTO.NOELIA.NAHIR        CORONEL.SABRINA.ROXANA 
+
+                            3                             0                             0 
+
+  COTTO.LINARES.YAMILA.MARINA                  DUARTE.IVANA       DUBARRY.MIRIAM.MERCEDES 
+
+                            5                             6                             6 
+
+       ENCINAS.LEILA.AGOSTINA     ESPOSITO.MARIA.DEL.CARMEN              FERRINI.VERONICA 
+
+                            5                             7                             9 
+
+          GALVAN.ANDREA.ELENA          GARDÚ.ESTELA.SUSANA        GIMENEZ.MELISA.SOLEDAD 
+
+                            1                             8                             5 
+
+     LLAMPA.NICOLAS.FRANCISCO            MEDINA.AYLEN.LUCIA                MENDOZA.ANDREA 
+
+                            8                             6                             1 
+
+         MILARKI.MARIA.ESTHER            ORREGO.SARA.MARINA              PALLERES.MICAELA 
+
+                            6                             0                             2 
+
+        PORTILLO.JESICA.NOEMI       PRIETO.CASCO.LUZ.RAQUEL            ROA.CRISTINA.ELENA 
+
+                            3                             3                            12 
+
+    RODR?.GUEZ.MICAELA.SOF?.A         ROSSI.FERNANDA.ANALIA               SALERNO.BARBARA 
+
+                            3                             2                             3 
+
+     SANCHEZ.SANDRA.DEL.VALLE                    VER.SILVIA     ZALAZAR.VERONICA.CAROLINA 
+
+                            0                             5                             1 
