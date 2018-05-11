@@ -42,20 +42,19 @@ plot_circle <-plot (mi_primer_sociograma, # Object of plot
 
 #Betweenness (Centralidad)#
 
-centralidad <- betweenness(mi_primer_sociograma,
+intermediacion <- betweenness(mi_primer_sociograma,
             directed = TRUE)
 
-centralidad
+summary(intermedicacion)
 
-#Degree (Grados)#
+print(intermediacion)
 
-grados <- degree(mi_primer_sociograma,
+#Degree (Grado de centralidad)#
+
+grado <- degree(mi_primer_sociograma,
                  mode= "ALL")
 
-grados
+summary(grado)
+print(grado)
 
-#Closeness (Clausura)#
-#holis
-closeness <- closeness(mi_primer_sociograma,
-                     mode ="ALL") 
 
