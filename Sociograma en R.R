@@ -55,7 +55,7 @@ grados <- degree(mi_primer_sociograma,
 grados
 
 #Closeness (Clausura)#
-
+#holis
 closeness <- closeness(mi_primer_sociograma,
                      mode ="ALL") 
 
