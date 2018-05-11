@@ -4,6 +4,9 @@ SET UNICODE=ON.
 SHOW LOCALE.
 PRESERVE LOCALE.
 SET LOCALE='en_AR'.
+
+*Below /FILE= you should insert yout file location*
+
 GET DATA
  /TYPE=TXT
  /FILE='C:\Users\User\Downloads\survey_651474_SPSS_data_file.dat'
@@ -65,7 +68,9 @@ GET DATA
  V49 F1.
 CACHE.
 EXECUTE.
+
 *Define Variable Properties.
+
 VARIABLE LABELS V1 "id".
 VARIABLE LABELS V2 "submitdate".
 VARIABLE LABELS V3 "lastpage".
@@ -217,7 +222,9 @@ VARIABLE LABELS V49 "[ZALAZAR VERONICA CAROLINA] Indique si considera que tiene 
 "una persona con alguna cara. Por ejemplo, diremos que cada uno de nosotros (ego para la teoría) tenermos relación con otro compañero (alter para la teoría) si:	Hablamos regularmente (1 vez por semana) o, 	Nos sentarnos intencion"+
 "almente juntos o,	Ya hemos trabajado en grupo o,	Lo considero un amigo por fuera de la universidadEsto permite que, posteriormente cuando se realicen los análisis de los datos, asumir que todos interpretaron de modo similar la p"+
 "regunta.".
+
 *Define Value labels.
+
 VALUE LABELS  V10
  "A1" "CUANTITATIVA UNAJ - 1er Cuatrimestre 2018".
 VALUE LABELS  V11
