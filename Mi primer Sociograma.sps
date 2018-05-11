@@ -1,5 +1,5 @@
-﻿* Encoding: UTF-8.
-*$Rev: 121017 $ all 2.
+Encoding: UTF-8.
+Rev: 121017 $ all 2.
 SET UNICODE=ON.
 SHOW LOCALE.
 PRESERVE LOCALE.
