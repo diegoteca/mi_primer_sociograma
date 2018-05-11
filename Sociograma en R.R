@@ -7,8 +7,8 @@ install.packages("tidygraph")
 # load packages for network exploration 
 
 library(readr)
-library(igraph)
-library(tidygraph)
+library(igraph) # Packages for network analysis and visualization
+library(tidygraph) # Packages for network analysis and visualization compatible with "tidy" data philosophy
 
 # Import data matrix in csv extension
 
