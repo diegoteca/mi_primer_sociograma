@@ -25,21 +25,36 @@ mi_primer_sociograma <- graph.adjacency(matrix,
                                         diag = FALSE)
 mi_primer_sociograma
 
+
 plot_reingold <-plot (mi_primer_sociograma, # Object of plot
       main="Sociograma del curso", # Principal Title of plot
       sub="Cada circulo representa una persona y cada línea representa la relación social de 'conocer a.", # Secundary tittle of plot
-      layout=layout.fruchterman.reingold) #Layout algorithm
+      layout=layout.fruchterman.reingold, #Layout algorithm
+      vertex.size=15) # Size of the vertex
 
 plot_circle <-plot (mi_primer_sociograma, # Object of plot
               main="Sociograma del curso", # Principal Title of plot
               sub="Cada circulo representa una persona y cada línea representa la relación social de 'conocer a.", # Secundary tittle of plot
-              layout=layout.circle) #Layout algorithm
-prueba <-alpha.centrality(mi_primer_sociograma,
-                 nodes = V(mi_primer_sociograma),
-                 alpha =1,
-                 loops = FALSE)
+              layout=layout.circle, #Layout algorithm
+              vertex.size=15) # Size of the vertex
 
-write_graph(g, "/tmp/g.txt", "edgelist")
+#Some analytics about this social network#
 
-write_graph(mi_primer_sociograma, "graphml")
+#Betweenness (Centralidad)#
+
+centralidad <- betweenness(mi_primer_sociograma,
+            directed = TRUE)
+
+centralidad
+
+#Degree (Grados)#
+
+grados <- degree(mi_primer_sociograma,
+                 mode= "ALL")
+
+grados
+
+#Clousure (Clausura)#
+
+
 
