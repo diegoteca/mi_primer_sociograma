@@ -54,7 +54,8 @@ grados <- degree(mi_primer_sociograma,
 
 grados
 
-#Clousure (Clausura)#
+#Closeness (Clausura)#
 
-
+closeness <- closeness(mi_primer_sociograma,
+                     mode ="ALL") 
 
