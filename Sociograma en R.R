@@ -25,4 +25,3 @@ mi_primer_sociograma <- graph.adjacency(matrix,
 mi_primer_sociograma
 
 plot (mi_primer_sociograma)
-
