@@ -1,0 +1,57 @@
+---
+title: "Mi primer sociograma"
+author: "Este archivo está hecho con R Markdown"
+date: "Este archivo se actualiza de forma automática "
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Resultados del sociograma
+
+Los análisis de un sociograma pueden ser tanto visuales como analíticos, así como individuales de cada nodo como agrupados para toda la red. En este sentido, se comienza mostrando algunos gráficos de toda la red social para luego pasar a algunas métricas usuales analíticas tanto de los nodos como de la red.
+
+Primera Visualización: 
+
+Esta visualización se realiza con el paquete "Igraph" del programa R.
+
+```{r, echo=FALSE,message=FALSE}
+#Script mi primer sociograma#
+
+# load packages for network exploration 
+
+library(readr)
+library(igraph) # Packages for network analysis and visualization
+library(tidygraph) # Packages for network analysis and visualization compatible with "tidy" data philosophy
+
+
+# Import data matrix in csv extension
+
+mat_adyacencia <- read.csv("https://raw.githubusercontent.com/diegoteca/mi_primer_sociograma/master/mat_adyacencia.csv", 
+                           row.names=1, 
+                           sep=";",
+                           header=TRUE)
+
+matrix <-as.matrix(mat_adyacencia)
+
+mi_primer_sociograma <- graph.adjacency(matrix,
+                                        mode = "directed",
+                                        diag = FALSE)
+plot_reingold <-plot (mi_primer_sociograma, # Object of plot
+      main="Sociograma del curso", # Principal Title of plot
+      sub="Cada circulo representa una persona y cada línea representa la relación social de 'conocer a.", # Secundary tittle of plot
+      layout=layout.fruchterman.reingold, #Layout algorithm
+      vertex.size=15) # Size of the vertex
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
