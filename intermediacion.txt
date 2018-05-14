@@ -1,0 +1,27 @@
+> ***Datos agregados sobre intermediaciòn (betweenness)
+
+summary(intermediacion)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   0.00    0.00    0.00   22.33   30.83  153.00 
+   
+   ***Datos individuales sobre intermediación***
+   
+> print(intermediacion)
+     ARANCIBIA.ELIANA.SOLEDAD       ARRECHEA.WALTER.FACUNDO          AVALOS.JESICA.ANALIA         BARRIOS.LAURA.DANIELA 
+                      0.00000                       0.00000                       0.00000                     101.16667 
+GANDUGLIA.AYELEN.CELESTE.BELE           BENITEZ.LUCIA.ANAHI         CABELLO.HUGO.MAURICIO          COMOTTO.NOELIA.NAHIR 
+                     10.16667                       0.00000                       0.00000                       0.00000 
+       CORONEL.SABRINA.ROXANA   COTTO.LINARES.YAMILA.MARINA                  DUARTE.IVANA       DUBARRY.MIRIAM.MERCEDES 
+                      0.00000                       0.00000                      12.83333                      69.00000 
+       ENCINAS.LEILA.AGOSTINA     ESPOSITO.MARIA.DEL.CARMEN              FERRINI.VERONICA           GALVAN.ANDREA.ELENA 
+                     53.66667                      45.50000                      62.33333                       0.00000 
+         GARDÃš.ESTELA.SUSANA        GIMENEZ.MELISA.SOLEDAD      LLAMPA.NICOLAS.FRANCISCO            MEDINA.AYLEN.LUCIA 
+                     78.00000                      30.83333                      45.00000                      20.00000 
+               MENDOZA.ANDREA          MILARKI.MARIA.ESTHER            ORREGO.SARA.MARINA              PALLERES.MICAELA 
+                      0.00000                      19.16667                       0.00000                       0.00000 
+        PORTILLO.JESICA.NOEMI       PRIETO.CASCO.LUZ.RAQUEL            ROA.CRISTINA.ELENA     RODRÃ.GUEZ.MICAELA.SOFÃ.A 
+                      0.00000                      19.00000                     153.00000                       0.00000 
+        ROSSI.FERNANDA.ANALIA               SALERNO.BARBARA      SANCHEZ.SANDRA.DEL.VALLE                    VER.SILVIA 
+                      0.00000                       0.00000                       0.00000                      17.33333 
+    ZALAZAR.VERONICA.CAROLINA 
+                      0.00000 
