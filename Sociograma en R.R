@@ -10,6 +10,8 @@ library(readr)
 library(igraph) # Packages for network analysis and visualization
 library(tidygraph) # Packages for network analysis and visualization compatible with "tidy" data philosophy
 
+#En esta dirección hay muy buena información
+#https://github.com/jalapic/SNA_workshop
 
 # Import data matrix in csv extension
 
