@@ -40,7 +40,24 @@ plot_circle <-plot (mi_primer_sociograma, # Object of plot
                     layout=layout.circle, #Layout algorithm
                     vertex.size=15) # Size of the vertex
 
+#Add some atrubuttes for nodes of teh network#
+
+nodos_atrib <- read.csv("data/friends_attr.csv"
+                        row.names=1, 
+                        sep=",",
+                        header=TRUE)
+
 #Some analytics about this social network#
+
+V(mi_primer_sociograma)
+E(mi_primer_sociograma)
+
+gsize(mi_primer_sociograma)
+ecount(mi_primer_sociograma)
+
+# Count number of vertices
+gorder(mi_primer_sociograma)
+vcount(mi_primer_sociograma)
 
 #Betweenness (Centralidad)#
 
