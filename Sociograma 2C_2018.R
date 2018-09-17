@@ -40,12 +40,29 @@ plot_circle <-plot (mi_primer_sociograma, # Object of plot
                     layout=layout.circle, #Layout algorithm
                     vertex.size=15) # Size of the vertex
 
-#Add some atrubuttes for nodes of teh network#
+#Add some atributtes for nodes of the network#
+#Export from SPSS in UTF 8
 
-nodos_atrib <- read.csv("data/friends_attr.csv"
-                        row.names=1, 
+nodos_atrib <- read.csv("~/R projects/mi_primer_sociograma/atributos_2C_2018.csv",
                         sep=",",
-                        header=TRUE)
+                        header=TRUE) #No se detalla el row.names porque no va con tidydata
+
+# We add atributtes to mi_primer_sociograma object#
+
+mi_primer_sociograma <-set_vertex_attr(mi_primer_sociograma, "Género", value = nodos_atrib$GENERO)
+mi_primer_sociograma <-set_vertex_attr(mi_primer_sociograma, "nombre", value = nodos_atrib$APELLIDO)
+mi_primer_sociograma <-set_vertex_attr(mi_primer_sociograma, "Grupo", value = nodos_atrib$GRUPO)
+
+#Si se pone "label" en el plot sale "label"
+
+vertex_attr(mi_primer_sociograma)
+edge_attr(mi_primer_sociograma)
+V(mi_primer_sociograma)
+
+V(mi_primer_sociograma)$color<- ifelse(V(mi_primer_sociograma)$Género == 1, "red", "blue")
+V(mi_primer_sociograma)$color <- mi_primer_sociograma$Grupo + 1
+
+plot (mi_primer_sociograma, vertex.label.color = "black")
 
 #Some analytics about this social network#
 
@@ -62,6 +79,9 @@ vcount(mi_primer_sociograma)
 #Betweenness (Centralidad)#
 
 intermediacion <- betweenness(mi_primer_sociograma,
+                              directed = TRUE)
+
+intermediacion <- betweenness(V(mi_primer_sociograma)$color,
                               directed = TRUE)
 
 summary(intermediacion)

@@ -17,7 +17,7 @@ library(tidygraph) # Packages for network analysis and visualization compatible 
 
 mat_adyacencia <- read.csv("https://raw.githubusercontent.com/diegoteca/mi_primer_sociograma/master/mat_adyacencia.csv", 
                            row.names=1, 
-                           sep=";",
+                           sep=",",
                            header=TRUE)
 
 matrix <-as.matrix(mat_adyacencia)
